@@ -3,78 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Min Gao | Data Portfolio</title>
+
+  <title>Min Gao | Healthcare Data Portfolio</title>
+
+  <meta
+    name="description"
+    content="Min Gao's portfolio featuring healthcare data,
+    EHR implementation, data quality, and analytics projects."
+  >
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 0 24px;
       line-height: 1.7;
       color: #202936;
-      background: #fafbfc;
+      background: #f5f7fb;
     }
-    h1 { font-size: 42px; margin-bottom: 0; }
-    h2 { margin-top: 40px; }
-    article {
-      background: white;
-      padding: 20px;
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 24px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 7vw, 48px);
+      line-height: 1.2;
+    }
+
+    .headline {
+      margin-top: 12px;
+      color: #315a85;
+      font-size: 18px;
+    }
+
+    .intro {
+      max-width: 740px;
+      color: #526174;
+    }
+
+    h2 {
+      margin: 40px 0 16px;
+      font-size: 26px;
+    }
+
+    h3 {
+      margin: 12px 0;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    .project {
       margin: 20px 0;
-      border: 1px solid #ddd;
-      border-radius: 12px;
+      padding: 26px;
+      background: #ffffff;
+      border: 1px solid #dce3ec;
+      border-radius: 14px;
     }
-    a { color: #1565c0; }
+
+    .project p {
+      color: #526174;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: #eaf2ff;
+      color: #234f8a;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .status.planned {
+      background: #f0f2f5;
+      color: #596579;
+    }
+
+    .tools {
+      font-size: 14px;
+    }
+
+    a {
+      color: #1559a8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #1559a8;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #104782;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #d08000;
+      outline-offset: 4px;
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 20px;
+      border-top: 1px solid #dce3ec;
+      color: #526174;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 36px 18px;
+      }
+
+      .project {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <h1>Min Gao</h1>
-  <p>Healthcare Data · EHR Implementation · Analytics</p>
+  <div class="container">
 
-  <p>
-    Lead Data Analyst with experience in healthcare reporting,
-    data quality, SQL optimization, and EHR migration preparation.
-    Currently studying AI in Healthcare at Rutgers University.
-  </p>
+    <header>
+      <h1>Min Gao</h1>
 
-  <h2>Projects</h2>
+      <p class="headline">
+        Healthcare Data · EHR Implementation · Analytics
+      </p>
 
-  <section>
-  <h3>EHR Migration &amp; Data Quality Pipeline</h3>
+      <p class="intro">
+        I am a Lead Data Analyst with experience in healthcare
+        reporting, data quality, SQL optimization, and EHR
+        migration preparation.
+      </p>
 
-  <p>
-    A synthetic-data demonstration of EHR data cleaning,
-    program mapping, validation, and reconciliation.
-    Inspired by my healthcare data implementation experience.
-  </p>
+      <p class="intro">
+        I am pursuing a Doctor of Health Informatics degree
+        at Rutgers University, with a focus on AI in Healthcare.
+        My interests include data engineering, predictive
+        analytics, and improving healthcare operations.
+      </p>
 
-  <p><strong>Tools:</strong> Python, pandas, Streamlit</p>
-  <p><strong>Status:</strong> Learning project · In progress</p>
+      <a
+        href="https://github.com/mmapleray23"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View my GitHub profile
+      </a>
+    </header>
 
-  <a
-    href="https://github.com/mmapleray23/ehr-migration-data-quality"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View Project on GitHub
-  </a>
-</section>
+    <main>
+      <h2>Projects</h2>
 
-  <article>
-    <h3>Funding Utilization Forecast</h3>
-    <p>
-      A planned forecasting demo for funding utilization,
-      budget alerts, and scenario analysis.
-    </p>
-    <p>Status: Planned project.</p>
-  </article>
+      <article class="project">
+        <span class="status">Learning project · In progress</span>
 
-  <article>
-    <h3>Billing Data Quality Checks</h3>
-    <p>
-      A planned demonstration of validation rules,
-      exception reporting, and data quality monitoring.
-    </p>
-    <p>Status: Planned project.</p>
-  </article>
+        <h3>EHR Migration &amp; Data Quality Pipeline</h3>
+
+        <p>
+          A synthetic-data demonstration of preparing client
+          demographic and admission records for an EHR migration.
+          The project includes data cleaning, program-code mapping,
+          validation rules, exception reporting, and reconciliation.
+        </p>
+
+        <p>
+          Inspired by my healthcare implementation experience,
+          this demonstration uses fictional records and a generic
+          target schema. It does not connect to a production EHR.
+        </p>
+
+        <p class="tools">
+          <strong>Tools:</strong> Python, pandas, Streamlit
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/mmapleray23/ehr-migration-data-quality"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+      </article>
+
+      <article class="project">
+        <span class="status planned">Planned project</span>
+
+        <h3>Funding Utilization Forecast</h3>
+
+        <p>
+          A planned forecasting demonstration using synthetic
+          funding and spending data to estimate budget utilization,
+          identify potential funding gaps, and compare spending
+          scenarios.
+        </p>
+
+        <p>
+          The goal is to support operational planning through
+          clear forecasts and documented assumptions.
+        </p>
+      </article>
+
+      <article class="project">
+        <span class="status planned">Planned project</span>
+
+        <h3>Billing Data Quality Checks</h3>
+
+        <p>
+          A planned demonstration of billing-data validation,
+          exception reporting, and quality monitoring using
+          synthetic records.
+        </p>
+
+        <p>
+          The goal is to identify missing fields, inconsistent
+          codes, and records requiring review before submission.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Portfolio demonstrations use synthetic data.
+        Planned projects are labeled separately.
+      </p>
+      <p>Min Gao · Healthcare Data Portfolio</p>
+    </footer>
+
+  </div>
 </body>
 </html>
